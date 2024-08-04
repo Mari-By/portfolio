@@ -33,10 +33,10 @@
     height: 100vh;
     z-index: 10;
     visibility: hidden;
-    opacity: 0; 
+    opacity: 1;
     transition: all 0.5s;
     &.active {
-        left: 0; 
+        left: 0;
         visibility: visible;
         opacity: 1;
     }
