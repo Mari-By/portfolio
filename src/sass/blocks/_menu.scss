@@ -24,3 +24,85 @@
         background-color: rgba($color: $main-color, $alpha: 0.24);
     }
 }
+
+.menu {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0; 
+    transition: all 0.5s;
+    &.active {
+        left: 0; 
+        visibility: visible;
+        opacity: 1;
+    }
+    &_block {
+        background-color: $main-color;
+        color: #fff;
+        position: relative;
+        width: 345px;
+        height: 100%;
+        transition: all 0.5s;
+        z-index: 10;
+    }
+    &_close {
+        position: absolute;
+        top: 25px;
+        left: 290px;
+        cursor: pointer;
+    }
+    &_list {
+        padding-top: 140px;
+        padding-left: 75px;
+        list-style-type: none;
+        font-weight: 700;
+        
+    }
+    &_link {
+        margin-bottom: 17px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 5px;
+            width: 15px;
+            height: 15px; 
+            border: 1.5px solid #000;
+            border-radius: 100%;
+            transition: all 0.5s;
+        }
+        &:hover {
+            &:before {
+                background-color: #fff;
+            }
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &_social {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        left: 128px; 
+        bottom: 50px;
+        width: 90px; 
+    }
+
+    &_overlay {
+        top: 0;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.5;
+        
+    }
+}
