@@ -1,7 +1,7 @@
 .work {
     height: 1025px;
     margin-top: 50px;
-    position: relative;;
+    position: relative;
     &_stitle {
         text-align: center;
         @include circle-center;
@@ -32,4 +32,46 @@
 }
 .item_wrapp {
     padding: 30px 30px 30px 30px;
+}
+.skill {
+    margin-top: 120px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 70px);
+    row-gap: 30px;
+    column-gap: 45px;
+    &_item {
+        position: relative;
+    }
+    &_stitle {
+        padding-left: 12px;
+        position: relative;
+        width: 150px;
+        @include circle;
+            &:before {
+                top: -7px;
+            }
+    }
+    &_item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    &_scale-W {
+        border-radius: 4px;
+        width: 350px;
+        height: 14px;
+        background: #e8e4de;
+        margin-top: 27px;
+    }
+    &_scale-Y {
+        border-radius: 4px;
+        height: 14px;
+        background: $main-color;
+        position: absolute;
+        top: 52px;
+    }
 }
