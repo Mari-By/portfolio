@@ -22,7 +22,7 @@
             &::after {
                 content: '';
                 width: 1px;
-                height: 100%;
+                height: 115%;
                 position: absolute;
                 top: -16px;
                 left: 0;
@@ -30,10 +30,13 @@
             }
         }
     }
-    &_item_icon {
+    
+
+    &_item_stitle {
         position: relative;
         @include circle-dos;
-    }
+        }
+
     &_wrapper {
         padding-top: 60px;
         padding-left: 65px;
@@ -61,11 +64,29 @@
     }
     &_item_head {
         padding-left: 100px;
+        position: relative;
     }
     &_item_body {
         padding-left: 35px;
         padding-top: 0px;
         margin-top: 8px;
     }
+    &_item {
+        &::before {
+            content: '';
+            width: 40px;
+            height: 1px;
+            position: absolute;
+            top: 18px;
+            left: 0px;
+            background: #000;
+        }
+    }
         
 }
+.exp_item_icon {
+    position: absolute;
+    left: 55px;
+    top: 13px;
+}
+

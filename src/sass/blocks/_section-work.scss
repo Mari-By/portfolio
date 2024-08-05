@@ -1,0 +1,25 @@
+.work {
+    height: 1025px;
+    margin-top: 50px;
+    position: relative;;
+    &_stitle {
+        text-align: center;
+        @include circle-center;
+    }
+    &_title {
+        text-align: center;
+        padding-top: 5px;
+    }
+    &_wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: 270px;
+        gap: 13px;
+    }
+    &__item {
+        width: 210px;
+        border: 1px solid #000;
+        width: 270px;
+        height: 270px;
+    }
+}
