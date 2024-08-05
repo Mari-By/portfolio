@@ -16,10 +16,20 @@
         grid-template-rows: 270px;
         gap: 13px;
     }
-    &__item {
-        width: 210px;
+    &_item {
         border: 1px solid #000;
         width: 270px;
         height: 270px;
     }
+    &_subtitle {
+        margin-top: 17px;
+        margin-bottom: 13px;
+    }
+    &_js {
+        margin-top: 15px;
+        margin-bottom: 13px;
+    }
+}
+.item_wrapp {
+    padding: 30px 30px 30px 30px;
 }
