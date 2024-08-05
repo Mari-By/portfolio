@@ -24,3 +24,23 @@
         z-index: -1;
     }
 }
+@mixin circle-center {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -5px;
+        z-index: -1;
+    }
+}
+@mixin divider-yellow {
+    border: 2px solid $main-color;
+    width: 60px;
+    height: 0px;
+    margin-top: 25px;
+}
