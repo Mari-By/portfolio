@@ -1,0 +1,10 @@
+.price {
+    margin-top: 60px;
+    height: 285px;
+    position: relative;
+    
+    &_stitle {
+        text-align: center;
+        @include circle-center;
+}
+}

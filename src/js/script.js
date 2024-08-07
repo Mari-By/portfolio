@@ -9,3 +9,10 @@ hamburger.addEventListener('click' , () => {
 closeElem.addEventListener('click' , () => {
     menu.classList.remove('active');
 });
+
+/* const counters = document.querySelectorAll('rating'),
+    lines = document.querySelectorAll('.skill_scale-Y');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML; скрипт на зависимость процентов - НЕ РАБОТАЕТ
+}); */
