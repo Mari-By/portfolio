@@ -6,5 +6,61 @@
     &_stitle {
         text-align: center;
         @include circle-center;
+    }
+    &_wrapper {
+        width: 1100px;
+        padding-left: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
+        grid-template-rows: repeat(2, 45px);
+        justify-content: space-between;
+        grid-auto-flow: row;
+        grid-auto-rows: 45px;
+        row-gap: 15px;
+        
+    }
+    &_items {
+        position: relative;
+        display: grid;
+        grid-template-columns: 190px 120px;
+        grid-template-rows: repeat(2, 22px);
+        justify-content: space-between;
+        grid-template-areas:
+        "names price"
+        "des des"
+        
+    }
+        
+    &_head {
+        
+        &::before {
+            content: '';
+            position: absolute; 
+            width: 15px;
+            height: 15px;
+            background: $main-color;
+            border-radius: 100%;
+            left: -25px;
+            top: 10px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &_descr {
+        padding-top: 0px;
+    }
+    
 }
+
+#name {
+    grid-area: names;
+    
+}
+
+#price {
+    grid-area: price;
+}
+
+#des {
+    grid-area: des;
 }
