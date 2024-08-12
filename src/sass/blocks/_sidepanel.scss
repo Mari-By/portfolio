@@ -24,9 +24,18 @@
         }             
     }
     &_link {
-        
+        svg {
+            width: 23px;
+            height: 23px;
+        }
         &:hover {
             box-shadow: 0px 0px 40px $main-color;
         }
+    }
+    &_tg {
+        svg {
+            transform: rotate(-90deg);
+        }
+        
     }
 }

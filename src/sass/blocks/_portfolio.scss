@@ -26,4 +26,22 @@
     &_wp {
         width: 100%;
     }
+    &_item_four {
+        grid-row: 1 / 3;
+        grid-column: 4 / 5;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &_item_six {
+        grid-column: 2 / 4;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
 }
