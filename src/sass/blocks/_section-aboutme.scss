@@ -1,10 +1,10 @@
 .grid-container {
-    margin-top: 120px;
+    margin-top: 80px;
     display: grid;
     width: 1400px;
     height: 520px;
     grid-template-columns: 400px 380px 380px;
-    grid-template-rows: 260px 155px 205px;
+    grid-template-rows: 320px 155px 250px;
     grid-template-areas: 
     "main-foto about about"
     "main-foto skill-1 skill-2"
@@ -18,11 +18,11 @@
 }
 #about {
     grid-area: about;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 #skill-1 {
     grid-area: skill-1;
-    margin-left: 130px;
+    margin-left: 85px;
     position: relative;
 }
 #skill-2 {
@@ -32,7 +32,7 @@
 }
 #skill-3 {
     grid-area: skill-3;
-    margin-left: 130px;
+    margin-left: 85px;
     position: relative;
 }
 #skill-4 {
@@ -42,23 +42,32 @@
 }
 .my_foto {
     width: 400px;
-    height: 500px;
+    height: 600px;
+    object-fit: contain;
+
 }
 .aboutme {
     &_divider  {
         border: 2px solid $main-color;
         width: 60px;
         height: 0px;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
 
     }
+    &_title {
+        margin-top: 10px;
+    }
     &_subtitle {
+        margin-top: 20px;
         padding-left: 12px;
         position: relative;
         @include circle;
     }
     &_text {
-        margin-top: 20px;
+        margin-top: 10px;
+        font-size: 14px;
+
     }
     &_img {
         position: absolute;

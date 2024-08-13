@@ -1,14 +1,15 @@
 .contact {
     height: 670px;
     &_wrapper {
-        padding: 0 35px 0 52px;
+        padding: 0 35px 0 80px;
         display: grid;
-        grid-template-columns: 400px 585px;
+        grid-template-columns: 585px 400px;
         justify-content: space-between;
 
     }
     &_photo {
         padding-top: 40px;
+        object-fit: contain;
     }
     &_title {
         margin-top: 6px;
