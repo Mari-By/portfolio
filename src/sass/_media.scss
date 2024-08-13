@@ -1,0 +1,185 @@
+@media (max-width: 1330px) {
+    .container {
+        margin-left: 100px;
+    }
+    .sidepanel {
+        top: 200px;
+    }
+    .grid-container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+.container {
+    max-width: 960px;
+    
+}
+.grid-container {
+    margin-top: 50px;
+    max-width: 960px;
+    grid-template-columns: 340px 305px 305px;
+    grid-template-rows: 260px 155px 155px;
+}
+
+.title {
+    &_fz48 {
+        font-size: 30px;
+    }
+    &_fz36 {
+        font-size: 28px;
+    }
+    &_fz16 {
+        font-size: 14px;
+    }
+    &_fz14 {
+        font-size: 12px;
+    }
+}
+.text {
+    font-size: 12px;
+}
+
+.sidepanel {
+    display: none;
+}
+.promo {
+    padding-top: 190px;
+    &_title {
+        width: 300px;
+        line-height: 39px;
+    }
+}
+.aboutme {
+    .container {
+        margin-left: 0px;
+    }
+    &_divider {
+        margin-top: 6px;
+        margin-bottom: 11px;
+    }
+    &_text {
+        font-size: 12px;
+    }
+    &_img {
+        left: -36px;
+        top: 12px;
+    }
+    &_stitle {
+        left: 10px;
+    }
+
+}
+.my_foto {
+    width: 335px;
+    height: 520px;   
+}
+#about {
+    margin-left: 20px;
+}
+#skill-1, #skill-3, #skill-2, #skill-4 {
+    margin-left: 60px;
+}
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 670px;
+    }
+    .promo {
+        &_btns {
+            width: 230px;
+        }
+    }
+    .grid-container {
+        margin-top: 40px;
+        max-width: 750px;
+        min-height: 590px;
+        grid-template-columns: 270px 450px;
+        grid-template-rows: 245px 90px 90px 90px;
+        grid-template-areas: 
+        "main-foto about"
+        "main-foto skill-1"
+        "main-foto skill-2"
+        "main-foto skill-3"
+        "main-foto skill-4"
+        }
+    .my_foto {
+        width: 260px;
+        height: 590px;
+        object-fit: cover;   
+    }
+    .aboutme {
+        &_subtitle {
+            margin-top: 0px;
+        }
+        &_title {
+            margin-top: 5px;
+        }
+        &_divider {
+            margin-top: 0px;
+            margin-bottom: 11px;
+        }
+        &_text {
+            margin-top: 3px;
+            font-weight: 500;
+        }
+        &_img {
+            left: -36px;
+            top: 12px;
+        }
+        &_stitle {
+            left: 10px;
+        }
+    }
+
+    #skill-1, #skill-3, #skill-2, #skill-4 {
+        margin-left: 70px;
+    }
+           
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        padding-left: 30px;
+        margin-left: 0px;
+    }
+    .hamburger {
+        right: 20px;
+    }
+   
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+        margin-left: 0px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+        }
+    }
+    .menu {
+        &_block {
+            width: 250px;
+        }
+        &_list {
+            padding-left: 55px;
+        }
+        &_close {
+            left: 195px;
+        }
+        &_link {
+            font-size: 22px;
+        }
+        &_social {
+            left: 80px;
+        }
+        
+    }
+        
+}
