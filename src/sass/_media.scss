@@ -141,6 +141,10 @@
 }
 
 @media (max-width: 768px) {
+    .promo {
+        height: 500px;
+    }
+    
     .container {
         max-width: 540px;
         padding-left: 30px;
@@ -148,6 +152,38 @@
     }
     .hamburger {
         right: 20px;
+    }
+    .aboutme {
+        .container {
+            margin: 0 auto;
+        }
+        .grid-container{
+            margin-top: 40px;
+            max-width: 520px;
+            min-height: 400px;
+            grid-template-columns: 510px;
+            grid-template-rows: 0px auto auto auto auto auto;
+            grid-template-areas: 
+            "main-foto"
+            "about"
+            "skill-1"
+            "skill-2"
+            "skill-3"
+            "skill-4"
+        }
+        .my_foto {
+            height: 510px;
+            opacity: 0.25;
+            object-fit: cover;
+            margin-left: 260px;   
+        }
+        #skill-1, #skill-3, #skill-2, #skill-4 {
+            margin-left: 50px;
+        }
+        #about {
+            margin-left: 0px;
+        }
+
     }
    
 }
@@ -157,6 +193,10 @@
         max-width: 100%;
         padding: 0 20px;
         margin-left: 0px;
+        max-height: 700px;
+    }
+    .promo {
+        height: 500px;
     }
     .title {
         &_fz48 {
@@ -179,7 +219,32 @@
         &_social {
             left: 80px;
         }
+    }
+    .aboutme {
+        .container {
+            padding-left: 0px;
+        }
+        .my_foto {
+            opacity: 0;
+            
+            margin-left: -300px;
+            width: 300px;
+            
+        }
+    
+        .grid-container{
+            margin-top: 40px;
+            margin: 40px auto 0 auto;
+            max-width: 100%;
+            min-height: 400px;
+            grid-template-columns: auto;
+        }
+        &_stitle {
+            width: 215px;
+            margin-top: 10px;
+        }
         
     }
+    
         
 }
