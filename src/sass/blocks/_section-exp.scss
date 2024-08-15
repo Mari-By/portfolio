@@ -1,9 +1,11 @@
 .exp {
     margin-top: 120px;
-    height: 560px;
-    position: relative;;
+    max-height: 560px;
+    position: relative;
+    
     &_stitle {
         margin-top: 180px;
+        transform: translateX(0.1%);
         text-align: center;
         @include circle-center;
     }

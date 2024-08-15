@@ -8,80 +8,104 @@
     .grid-container {
         max-width: 1200px;
     }
+    .exp {
+        &_stitle {
+            margin-top: 130px;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
-.container {
-    max-width: 960px;
-    
-}
-.grid-container {
-    margin-top: 50px;
-    max-width: 960px;
-    grid-template-columns: 340px 305px 305px;
-    grid-template-rows: 260px 155px 155px;
-}
-
-.title {
-    &_fz48 {
-        font-size: 30px;
-    }
-    &_fz36 {
-        font-size: 28px;
-    }
-    &_fz16 {
-        font-size: 14px;
-    }
-    &_fz14 {
-        font-size: 12px;
-    }
-}
-.text {
-    font-size: 12px;
-}
-
-.sidepanel {
-    display: none;
-}
-.promo {
-    padding-top: 190px;
-    &_title {
-        width: 300px;
-        line-height: 39px;
-    }
-}
-.aboutme {
     .container {
-        margin-left: 0px;
+        max-width: 850px;
+        margin-left: 30px;
+
     }
-    &_divider {
-        margin-top: 6px;
-        margin-bottom: 11px;
+    .grid-container {
+        margin-top: 50px;
+        max-width: 960px;
+        grid-template-columns: 340px 305px 305px;
+        grid-template-rows: 260px 155px 155px;
     }
-    &_text {
+
+    .title {
+        &_fz48 {
+            font-size: 30px;
+        }
+        &_fz36 {
+            font-size: 28px;
+        }
+        &_fz16 {
+            font-size: 14px;
+        }
+        &_fz14 {
+            font-size: 12px;
+        }
+    }
+    .text {
         font-size: 12px;
     }
-    &_img {
-        left: -36px;
-        top: 12px;
-    }
-    &_stitle {
-        left: 10px;
-    }
 
-}
-.my_foto {
-    width: 335px;
-    height: 520px;   
-}
-#about {
-    margin-left: 20px;
-}
-#skill-1, #skill-3, #skill-2, #skill-4 {
-    margin-left: 60px;
+    .sidepanel {
+        display: none;
+    }
+    .promo {
+        padding-top: 190px;
+        &_title {
+            width: 300px;
+            line-height: 39px;
+        }
+    }
+    .aboutme {
+        .container {
+            margin-left: 0px;
+        }
+        &_divider {
+            margin-top: 6px;
+            margin-bottom: 11px;
+        }
+        &_text {
+            font-size: 12px;
+        }
+        &_img {
+            left: -36px;
+            top: 12px;
+        }
+        &_stitle {
+            left: 10px;
+        }
+
+    }
+    .my_foto {
+        width: 335px;
+        height: 520px;   
+    }
+    #about {
+        margin-left: 20px;
+    }
+    #skill-1, #skill-3, #skill-2, #skill-4 {
+        margin-left: 60px;
+    }
+    .exp {
+        margin-top: 40px;
+        height: 450px;
+        &_stitle {
+            margin-top: 20px;
+        }
+        &_divider {
+            margin: 10px auto;
+        }
+        &_wrapper {
+            padding-top: 20px;
+            max-width: 850px;
+            padding-left: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 400px);
+            column-gap: 40px;
+        }
+    }
 }
 
-}
 
 @media (max-width: 992px) {
     .container {
@@ -137,6 +161,28 @@
     #skill-1, #skill-3, #skill-2, #skill-4 {
         margin-left: 70px;
     }
+
+    .exp {
+        .container {
+            margin: 0 auto;
+            max-width: 750px;
+        }
+        
+        &_stitle {
+            margin-top: 20px;
+        }
+        &_divider {
+            margin: 10px auto;
+        }
+        &_wrapper {
+            padding-top: 20px;
+            padding-left: 30px;
+            max-width: 700px;
+            display: grid;
+            grid-template-columns: 300px 320px;
+            column-gap: 30px;
+        }
+    }
            
 }
 
@@ -185,6 +231,22 @@
         }
 
     }
+    .exp {
+        .container {
+            margin: 0 auto;
+            max-width: 520px;
+            padding: 0px;
+        }
+
+        &_wrapper {
+            padding-top: 20px;
+            padding-left: 5px;
+            max-width: 520px;
+            display: grid;
+            grid-template-columns: 450px;
+           
+        }
+    }
    
 }
 
@@ -193,7 +255,7 @@
         max-width: 100%;
         padding: 0 20px;
         margin-left: 0px;
-        max-height: 700px;
+        /* max-height: 700px; */
     }
     .promo {
         height: 500px;
@@ -223,27 +285,47 @@
     .aboutme {
         .container {
             padding-left: 0px;
+            min-height: 770;
         }
         .my_foto {
             opacity: 0;
-            
             margin-left: -300px;
             width: 300px;
-            
+            height: 0px;
         }
     
         .grid-container{
             margin-top: 40px;
             margin: 40px auto 0 auto;
             max-width: 100%;
-            min-height: 400px;
+            min-height: 770px;
             grid-template-columns: auto;
+            grid-template-rows: auto;
         }
         &_stitle {
             width: 215px;
             margin-top: 10px;
         }
         
+    }
+    .exp {
+        margin-top: 40px;
+        
+        .container {
+            margin: 0px;
+            max-width: 100%; 
+            padding: 0px;
+        }
+
+        &_wrapper {
+            padding-top: 10px;
+            padding-left: 15px;
+            max-width: 100%; 
+            display: grid;
+            grid-template-columns: 1fr;
+           
+        }
+       
     }
     
         

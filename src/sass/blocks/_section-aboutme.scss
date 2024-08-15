@@ -1,8 +1,8 @@
 .grid-container {
     margin-top: 80px;
     display: grid;
-    width: 1400px;
-    height: 520px;
+    max-width: 1400px;
+    min-height: 520px;
     grid-template-columns: 400px 380px 380px;
     grid-template-rows: 320px 155px 250px;
     grid-template-areas: 
