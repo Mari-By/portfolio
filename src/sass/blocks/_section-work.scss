@@ -1,8 +1,9 @@
 .work {
-    height: 825px;
+    max-height: 825px;
     margin-top: 50px;
     position: relative;
     &_stitle {
+        transform: translateX(0.1%);
         text-align: center;
         @include circle-center;
     }
@@ -18,8 +19,7 @@
     }
     &_item {
         border: 1px solid #000;
-        width: 270px;
-        height: 270px;
+        
     }
     &_subtitle {
         margin-top: 17px;
@@ -31,7 +31,7 @@
     }
 }
 .item_wrapp {
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
 }
 .skill {
     margin-top: 120px;
@@ -41,9 +41,7 @@
     grid-template-rows: repeat(2, 70px);
     row-gap: 30px;
     column-gap: 45px;
-    &_item {
-        position: relative;
-    }
+    
     &_stitle {
         padding-left: 12px;
         position: relative;
@@ -54,6 +52,7 @@
             }
     }
     &_item {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;

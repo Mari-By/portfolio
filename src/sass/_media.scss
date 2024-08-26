@@ -10,15 +10,16 @@
     }
     .exp {
         &_stitle {
-            margin-top: 130px;
+            margin-top: 60px;
         }
     }
 }
 
 @media (max-width: 1200px) {
     .container {
-        max-width: 850px;
-        margin-left: 30px;
+        width: 960px;
+        padding-left: 30px;
+        margin: 0 auto;
 
     }
     .grid-container {
@@ -104,6 +105,40 @@
             column-gap: 40px;
         }
     }
+    .work {
+        margin-top: 10px;
+        &_wrapper {
+            grid-template-columns: repeat(4, 220px);
+            grid-template-rows: 220px;
+            gap: 13px;
+        }
+        &_subtitle {
+            margin-top: 7px;
+            margin-bottom: 5px;
+        }
+        &_js {
+            width: 130px;
+            margin-top: 7px;
+            margin-bottom: 5px;
+        }
+    }
+    .item_wrapp {
+        padding: 15px;
+        img {
+            height: 45px;
+        }
+    }
+    
+    .skill {
+        margin-top: 80px;
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: repeat(2, 60px);
+        row-gap: 30px;
+        column-gap: 30px;
+        &_scale-W {
+            margin-top: 31px;
+        }
+    }
 }
 
 
@@ -163,9 +198,11 @@
     }
 
     .exp {
+       height: 100%;
         .container {
             margin: 0 auto;
             max-width: 750px;
+            min-height: 500px;
         }
         
         &_stitle {
@@ -182,6 +219,26 @@
             grid-template-columns: 300px 320px;
             column-gap: 30px;
         }
+    }
+    .work {
+        &_wrapper {
+            margin: 30px auto;
+            padding-left: 40px;
+            grid-template-columns: repeat(2, 250px);
+            grid-template-rows: repeat(2, 230px);
+            column-gap: 50px;
+            row-gap: 30px;
+        }
+    }
+    
+    
+    .skill {
+        margin-top: 80px;
+        padding-left: 30px;
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: repeat(3, 60px);
+        row-gap: 30px;
+        column-gap: 30px;
     }
            
 }
@@ -234,18 +291,41 @@
     .exp {
         .container {
             margin: 0 auto;
-            max-width: 520px;
+            width: 100%;
             padding: 0px;
         }
 
         &_wrapper {
+            margin: 0 auto;
             padding-top: 20px;
-            padding-left: 5px;
+            padding-left: 35px;
             max-width: 520px;
             display: grid;
             grid-template-columns: 450px;
            
         }
+    }
+    .work {
+        max-height: 1200px;
+        .container {
+            margin: 0 auto;
+        }
+        &_wrapper {
+            margin: 20px auto;
+            padding-left: 15px;
+            grid-template-columns: repeat(2, 220px);
+            grid-template-rows: repeat(2, 215px);
+            column-gap: 30px;
+            row-gap: 20px;
+        }
+    }
+    .skill {
+        margin-top: 40px;
+        padding-left: 10px;
+        grid-template-columns: repeat(2, 240px);
+        grid-template-rows: repeat(3, 60px);
+        row-gap: 30px;
+        column-gap: 20px;
     }
    
 }
@@ -255,7 +335,7 @@
         max-width: 100%;
         padding: 0 20px;
         margin-left: 0px;
-        /* max-height: 700px; */
+        
     }
     .promo {
         height: 500px;
@@ -326,6 +406,31 @@
            
         }
        
+    }
+    .work {
+        max-height: 1200px;
+        margin: 30px auto;
+        .container {
+            margin: 0 auto;
+        }
+        &_wrapper {
+            width: 230px;
+            margin: 20px auto;
+            padding:20px;
+            padding-left: 0px;
+            grid-template-columns: repeat(1, 230px);
+            grid-template-rows: repeat(4, 215px);
+            row-gap: 20px;
+        }
+        
+    }
+    .skill {
+        width: 240px;
+        margin: 40px auto;
+        grid-template-columns: repeat(1, 240px);
+        grid-template-rows: repeat(6, 60px);
+        row-gap: 30px;
+        
     }
     
         
