@@ -4,6 +4,7 @@
     position: relative;
     
     &_stitle {
+        transform: translateX(0.1%);
         text-align: center;
         @include circle-center;
     }

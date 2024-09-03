@@ -140,6 +140,7 @@
         }
     }
     .portfolio {
+        height: 100%;
         &_item_four {
             grid-column: unset;
             grid-row: unset;
@@ -152,6 +153,18 @@
             gap: 30px;
         }
     } 
+    .price {
+        height: 100%;
+        margin-top: 40px;
+        .exp_divider {
+            margin-top: 20px;
+        }
+        &_wrapper {
+            margin-top: 20px;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
 }
 
 
@@ -211,7 +224,7 @@
     }
 
     .exp {
-       height: 100%;
+        height: 100%;
         .container {
             margin: 0 auto;
             max-width: 750px;
@@ -252,6 +265,25 @@
         grid-template-rows: repeat(3, 60px);
         row-gap: 30px;
         column-gap: 30px;
+    }
+    .price {
+        .container {
+            padding-left: 0px;
+            width: 100%;
+        }
+        
+        &_wrapper {
+            margin: 20px auto;
+            padding-left: 0px;
+            grid-template-columns: repeat(auto-fit, 300px);
+            row-gap: 20px;
+            grid-template-rows: repeat(2, auto);
+            
+        }
+        &_items {
+            grid-template-columns: 190px 70px;
+            grid-template-rows: repeat(2, auto);
+        }
     }
            
 }
@@ -347,7 +379,6 @@
         &_wrapper {
             grid-template-columns: repeat(auto-fit, 230px);
             grid-template-rows: repeat(2, 230px);
-            /* gap: 5px; */
             grid-auto-rows: 230px;
         }
         &_item {
@@ -356,6 +387,22 @@
                 height: 100%;
                 object-fit: cover;
             }
+        }
+    }
+    .price {
+        .container {
+            margin: 0 auto;
+            padding-left: 35px;
+        }        
+        
+    }
+    .price {  
+        &_wrapper {
+            grid-template-columns: repeat(auto-fit, 320px);
+            row-gap: 20px;
+        }
+        &_items {
+            grid-template-columns: 190px 90px;
         }
     }
    
@@ -476,6 +523,17 @@
         }
        
     }
-    
+    .price {  
+        .container {
+            padding: 0 10px 0 45px;
+        }
+        &_wrapper {
+            grid-template-columns: repeat(auto-fit, 270px);
+            row-gap: 20px;
+        }
+        &_items {
+            grid-template-columns: 190px 90px;
+        }
+    }
         
 }
