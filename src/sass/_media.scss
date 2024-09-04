@@ -446,7 +446,8 @@
     .contact {
         height: 100%;    
         &_form {
-            grid-template-columns: 230px 230px;
+            /* grid-template-columns: 230px 230px; */
+            grid-template-columns: repeat(2, 1fr);
             margin-top: 15px;
             row-gap: 20px;
         }
@@ -588,18 +589,25 @@
         }
     }
     .contact {
-       
+        &_wrapper {
+            grid-template-columns: 1fr;
+        }
+        &_title {
+            font-size: 24px;
+        }
         &_form {
-            grid-template-columns: 260px;
+            grid-template-columns: 1fr;
             grid-template-rows: 45px 45px 190px 90px;
-           
+            grid-auto-flow: row;
         }
         &_trigger {
             grid-template-columns: auto;
             grid-template-rows: 45px 45px;
+            grid-column: unset;
         }
-        
-        
+        &_textarea {
+            grid-column: unset;
+        }
     }
         
 }
